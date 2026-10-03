@@ -1,0 +1,28 @@
+[19:42:01] INFO: RTL compilation started
+[19:42:02] INFO: Compiling module and_gate
+[19:42:02] WARNING: Module and_gate_tb has an unused signal 'expected_y'
+[19:42:03] INFO: Compilation completed successfully
+[19:42:03] INFO: Starting simulation
+[19:42:04] INFO: TEST_001 - reset sequence
+[19:42:04] PASS: TEST_001 - reset sequence
+[19:42:05] INFO: TEST_002 - input combination 00
+[19:42:05] PASS: TEST_002 - input combination 00
+[19:42:06] INFO: TEST_003 - input combination 01
+[19:42:06] PASS: TEST_003 - input combination 01
+[19:42:07] INFO: TEST_004 - input combination 10
+[19:42:07] WARNING: TEST_004 - output changed after expected sampling edge
+[19:42:07] FAIL: TEST_004 - expected y=0, observed y=x
+[19:42:08] ERROR: Unknown value detected on signal 'y'
+[19:42:08] INFO: TEST_005 - input combination 11
+[19:42:08] PASS: TEST_005 - input combination 11
+[19:42:09] WARNING: Timing check violation at dut.y
+[19:42:09] ERROR: Assertion failed: y !== expected_y
+[19:42:10] INFO: TEST_006 - reset recovery
+[19:42:10] FAIL: TEST_006 - reset recovery timeout
+[19:42:11] ERROR: Simulation timeout waiting for signal 'done'
+[19:42:12] INFO: Dumping waveform to build/and_gate.vcd
+[19:42:12] WARNING: Signal 'debug_enable' is never driven
+[19:42:13] INFO: Simulation completed with failures
+[19:42:13] ERROR: 2 test(s) failed
+[19:42:13] ERROR: 3 warning(s) reported
+[19:42:13] INFO: Final verification status: FAIL
