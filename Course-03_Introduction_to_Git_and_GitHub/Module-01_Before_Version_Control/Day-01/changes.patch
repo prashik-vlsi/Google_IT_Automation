@@ -1,0 +1,11 @@
+--- practice/calculator.py	2026-10-10 19:26:08.910267922 +0530
++++ practice/calculator_v2.py	2026-10-10 19:27:49.272541456 +0530
+@@ -6,3 +6,8 @@
+ 
+ print("Addition:", add(10, 5))
+ print("Subtraction:", subtract(10, 5))
++
++def multiply(a, b):
++    return a * b
++
++print("Multiplication:", multiply(10, 5))
